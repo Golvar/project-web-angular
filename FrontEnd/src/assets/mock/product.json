@@ -1,0 +1,7 @@
+[
+    {"name":"Clavier", "price": 72, "quantity": 3, "description": "Super clavier AZERTY"},
+    {"name":"Souris", "price": 42, "quantity": 5, "description": "Super souris ambidextre"},
+    {"name":"Manette", "price": 31, "quantity": 12, "description": "Super manette violette"},
+    {"name":"Ecran", "price": 125, "quantity": 20, "description": "Super écran cathodique"},
+    {"name":"Tapis de souris", "price": 12, "quantity": 50, "description": "Super tapis de souris noir"}
+]

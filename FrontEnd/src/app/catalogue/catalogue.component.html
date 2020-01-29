@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <input type="text" class="form-control mt-4" placeholder="Filtre par nom d'article" [(ngModel)]="searchTerm"/>
+      <div *ngFor="let product of filteredProducts">
+        <div class="col-sm m-1 mt-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ product.price }} € </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Quantité : {{ product.quantity }} </h6>
+              <p class="card-text">{{ product.description }}</p>
+              <!-- <a  [routerLink]='["detail", product.name]' >Détails</a> -->
+              <button class="btn btn-primary ml-2" (click)='onClick(product)'>Commander</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

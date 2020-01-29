@@ -1,0 +1,17 @@
+<div class="container">
+  
+<div class="alert alert-success" role="alert" *ngIf="alreadyLoggedIn">
+  Vous êtes bien connecté !
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="failLoggedIn">
+  L'Identifiant ou le mot de passe est incorrect !
+</div>
+
+  <label>Identifiant : </label>
+  <input type="text" class="form-control" [(ngModel)]="login">
+  <label>Mot de passe : </label>
+  <input type="password" class="form-control" [(ngModel)]="password">
+
+  <a class="btn btn-outline-primary mt-2" routerLink="/catalogue" routerLinkActive="active" (click)="connect()" type="submit">Connexion</a>
+
+</div>
